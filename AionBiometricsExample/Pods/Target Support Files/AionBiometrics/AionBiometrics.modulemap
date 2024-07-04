@@ -1,0 +1,6 @@
+framework module AionBiometrics {
+  umbrella header "AionBiometrics-umbrella.h"
+
+  export *
+  module * { export * }
+}

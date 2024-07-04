@@ -1,0 +1,8 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.1'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'AionBiometricsExample' do
+  pod 'AionBiometrics', :path=> '../AionBiometrics'
+end

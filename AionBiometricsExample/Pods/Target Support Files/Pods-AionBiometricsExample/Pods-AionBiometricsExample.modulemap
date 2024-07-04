@@ -1,0 +1,6 @@
+framework module Pods_AionBiometricsExample {
+  umbrella header "Pods-AionBiometricsExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

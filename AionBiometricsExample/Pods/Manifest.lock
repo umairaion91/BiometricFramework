@@ -1,0 +1,16 @@
+PODS:
+  - AionBiometrics (1.0.0)
+
+DEPENDENCIES:
+  - AionBiometrics (from `../AionBiometrics`)
+
+EXTERNAL SOURCES:
+  AionBiometrics:
+    :path: "../AionBiometrics"
+
+SPEC CHECKSUMS:
+  AionBiometrics: b0c6a6a1b65f8aca9ac2d2c316879a92ddf170e1
+
+PODFILE CHECKSUM: 01308b974b1d87f27b0aaf086bb3a588645e6445
+
+COCOAPODS: 1.15.2

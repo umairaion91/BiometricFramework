@@ -10,6 +10,7 @@ import UIKit
 public typealias ImageResult = (UIImage, UIImage?)
 public typealias StringResult = (String, String?)
 
+/// 
 public protocol DocumentScanCoordinatorType {
     var imageResult: ((ImageResult) -> ())? { get set }
     var stringResult: ((StringResult) -> ())? { get set }

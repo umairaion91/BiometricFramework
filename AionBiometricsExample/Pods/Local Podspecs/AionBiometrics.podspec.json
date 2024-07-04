@@ -1,0 +1,48 @@
+{
+  "name": "AionBiometrics",
+  "version": "1.0.0",
+  "summary": "This is the framework to perform biometric varifation",
+  "description": "This framework perform identity verification for newly onboarded users",
+  "homepage": "https://github.com/umairaion91/BiometricFramework",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Umair Irfan": "160529780+umairaion91@users.noreply.github.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "requires_arc": true,
+  "swift_versions": "5.0",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "source": {
+    "git": "https://github.com/umairaion91/BiometricFramework.git",
+    "tag": "1.0.0"
+  },
+  "source_files": [
+    "AionBiometrics/**/*.{h,swift}",
+    "Dependencies/*.*"
+  ],
+  "vendored_frameworks": [
+    "Dependencies/DaonAuthenticatorFace.framework",
+    "Dependencies/DaonAuthenticatorSDK.framework",
+    "Dependencies/DaonCryptoSDK.framework",
+    "Dependencies/DaonDocument.framework",
+    "Dependencies/DaonFaceDetector.framework",
+    "Dependencies/DaonFaceLiveness.framework",
+    "Dependencies/DaonFaceLivenessBlink.framework",
+    "Dependencies/DaonFaceMatcher.framework",
+    "Dependencies/DaonFaceQuality.framework",
+    "Dependencies/DaonFaceSDK.framework",
+    "Dependencies/DaonFIDOSDK.framework",
+    "Dependencies/Microblink.framework"
+  ],
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "swift_version": "5.0"
+}

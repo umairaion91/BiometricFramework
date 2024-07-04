@@ -1,0 +1,14 @@
+${PODS_ROOT}/Target Support Files/Pods-AionBiometricsExample/Pods-AionBiometricsExample-frameworks.sh
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonAuthenticatorFace.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonAuthenticatorSDK.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonCryptoSDK.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonDocument.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonFaceDetector.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonFaceLiveness.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonFaceLivenessBlink.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonFaceMatcher.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonFaceQuality.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonFaceSDK.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/DaonFIDOSDK.framework
+${PODS_ROOT}/../../AionBiometrics/Dependencies/Microblink.framework
+${BUILT_PRODUCTS_DIR}/AionBiometrics/AionBiometrics.framework
