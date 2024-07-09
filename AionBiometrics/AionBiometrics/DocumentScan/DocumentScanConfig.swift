@@ -1,6 +1,6 @@
 //
 //  DocumentScanConfig.swift
-//  DaonSDK
+//  AionBiometrics
 //
 //  Created by Aoin Digital on 02/06/2024.
 //
@@ -35,7 +35,7 @@ public struct DocumentScanConfig {
     }
     
     // Convenience init to initialize the configurations from application
-    init (duration: Int, fallbackDuration: Int, 
+    public init (duration: Int, fallbackDuration: Int,
           isFallBackEdgeEnabled: Bool,
           isCaptureFace: Bool, quality: Float, 
           faceDocumentThreshold: Float, autoFaceCapture: Bool, 

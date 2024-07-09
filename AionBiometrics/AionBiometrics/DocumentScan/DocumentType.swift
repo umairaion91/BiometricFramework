@@ -1,6 +1,6 @@
 //
 //  DocumentScanTypes.swift
-//  DaonSDK
+//  AionBiometrics
 //
 //  Created by Aoin Digital on 02/06/2024.
 //

@@ -7,7 +7,7 @@
 
 import DaonDocument
 
-class DocumentService {
+final class DocumentService {
     
     let options: DMDSOptions = DMDSOptions.init()
     let captureManager = DMDSCaptureManager.init()

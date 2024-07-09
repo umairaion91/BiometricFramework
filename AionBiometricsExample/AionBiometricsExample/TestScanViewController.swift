@@ -39,7 +39,7 @@ class TestScanViewController: UIViewController {
     
     @objc
     func startDaonSDK() {
-        // coordinator.initializeDocumentScanner()
+        coordinator.initalize()
     }
     
     

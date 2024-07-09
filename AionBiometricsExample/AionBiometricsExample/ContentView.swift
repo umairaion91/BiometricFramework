@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Button("DaonSDK") {
+            Button("Start AionBiometrics") {
                 isPresented = true
             }
             .sheet(isPresented: $isPresented) {

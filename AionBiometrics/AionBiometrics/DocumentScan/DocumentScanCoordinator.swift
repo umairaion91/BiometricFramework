@@ -1,17 +1,20 @@
 //
 //  ScanDocumentCoordinator.swift
-//  DaonSDK
+//  AionBiometrics
 //
 //  Created by Aoin Digital on 02/06/2024.
 //
 
 import UIKit
 
-public typealias ImageResult = (UIImage, UIImage?)
-public typealias StringResult = (String, String?)
-
-/// 
+/// Document Scaning Coordinator Type confirms the scaned document by returing
+/// imageResult: Callback returns the scanned document Image
+/// stringResult: Callback returns the scanned document images in String Encode-format
+/// Usage Example:
+/// var coordinator: DocumentScanCoordinatorType = DocumentScanCoordinator()
+/// coordinator.initalize()
 public protocol DocumentScanCoordinatorType {
+    func initalize()
     var imageResult: ((ImageResult) -> ())? { get set }
     var stringResult: ((StringResult) -> ())? { get set }
 }
@@ -33,21 +36,15 @@ final public class DocumentScanCoordinator: DocumentScanCoordinatorType {
                 root: UIViewController) {
         self.config = config
         self.root = root
-        initalize()
     }
     
-    private func initalize() {
-        initializeDocumentScanner()
-    }
-    
-    func initializeDocumentScanner() {
-       
+    public func initalize() {
         var documentScanner: ScanDocumentType = ScanDocument(config: config,
-                                                             options: repo.prepareOptions(with: config), 
+                                                             options: repo.prepareOptions(with: config),
                                                              service: repo.captureManager)
         
         
-        let customOverlay = createCustomOverlay(with: documentScanner, 
+        let customOverlay = createCustomOverlay(with: documentScanner,
                                                 allowDualSideScan: config.allowDualSideScan)
         
         documentScanner.intializeScan(with: customOverlay, for: root) { [unowned self] result in
@@ -74,7 +71,6 @@ final public class DocumentScanCoordinator: DocumentScanCoordinatorType {
                 print(error.localizedDescription)
             }
         }
-        
     }
     
     private func createCustomOverlay(with service: ScanDocumentType,
